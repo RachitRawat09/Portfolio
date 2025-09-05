@@ -2,9 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import editor from "../../Assets/Projects/codeEditor.png";
 import campus from "../../Assets/Projects/campus.png";
+import inventory from "../../Assets/Projects/logo.jpeg"
 import codetocuisine from "../../Assets/Projects/codetucuisine.png"
+import green from "../../Assets/Projects/green.png"
 
 function Projects() {
   return (
@@ -40,16 +41,29 @@ function Projects() {
             />
           </Col>
 
-          {/* <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={green}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="👜 Green Cart"
+              description="Green Cart is a MERN-based online marketplace dedicated to sustainable products. It connects eco-conscious consumers with sellers offering environmentally friendly goods, such as reusable items, organic products, and upcycled materials. Users can browse, search, and filter listings, engage in real-time chat with sellers, and leave reviews to promote trust within the community. The platform also includes admin tools for managing reports and monitoring activity to ensure a safe and positive shopping experience."
+              ghLink="https://github.com/sak-shar00/Green-Cart"
+              demoLink="https://green-cart-frontend-0p3u.onrender.com/"
             />
-          </Col> */}
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={inventory}
+              isBlog={false}
+              title="🔍 Inventory Management System"
+              description="A web-based inventory management system built using the MERN stack (MongoDB, Express.js, React.js, Node.js) that allows businesses to efficiently track and manage their inventory in real-time. The sytem keep track which inventory is assigned to whom. Role based access control is implemented for security purpose using JWT token."
+              ghLink="https://github.com/RachitRawat09/storemanagement"
+              demoLink="https://coefm-storemanagement.onrender.com/"
+            />
+          </Col>
+
+          
 
           
         </Row>
